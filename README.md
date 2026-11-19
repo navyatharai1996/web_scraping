@@ -15,7 +15,7 @@ Built as a practical project covering web scraping, HTML parsing, text filtering
 
 ## Data Source
 
-This project uses Real Python’s sample job listings, provided for web scraping practice.
+This project uses Python’s sample job listings, provided for web scraping practice.
 
 The listings are fictional and demonstrate the tool’s functionality.
 
@@ -53,13 +53,7 @@ On Windows:
 py -m venv .venv
 ```
 
-### 3. Install dependencies
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
-
-### 4. Run the tool
+### 3. Run the tool
 
 ```powershell
 .\.venv\Scripts\python.exe job_discovery.py
@@ -95,11 +89,11 @@ Each run replaces the previous CSV output. Close the CSV in Excel before running
 ## Project Files
 
 ```text
-job_discovery.py       Main scraping and export script
-requirements.txt      External Python dependencies
+job_discovery.py      Main scraping and export script
 .gitignore            Files excluded from version control
 README.md             Project overview and instructions
 matching_jobs.csv     Generated output
+Project Documentation.docx
 ```
 
 ## Current Scope
