@@ -45,3 +45,12 @@ for job in job_cards:
 
 print("Total matching jobs:", len(results))
 
+output_path = Path(__file__).with_name("matching_jobs.csv")
+
+with output_path.open("w", newline="", encoding="utf-8-sig") as file:
+    columns = ["title", "company", "location", "matched_keyword"]
+    writer = csv.DictWriter(file, fieldnames=columns)
+    writer.writeheader()
+    writer.writerows(results)
+
+print("Saved to:", output_path)
